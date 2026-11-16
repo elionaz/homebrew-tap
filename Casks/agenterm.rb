@@ -1,6 +1,6 @@
 cask "agenterm" do
-  version "0.1.1"
-  sha256 "faea3b6be0b7f2a758d55b9238838ddb121267a842ac6f18d03cb002eecd4271"
+  version "0.2.0"
+  sha256 "1b099943e546343f79f5a231f9e9b39b74b9d46587c3242819859858945a32f0"
 
   url "https://github.com/elionaz/agenterm/releases/download/v#{version}/agenterm-#{version}-macos-universal.zip"
   name "agenterm"
@@ -12,7 +12,11 @@ cask "agenterm" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
+
+  # No `auto_updates true`: the app detects that this cask installed it and
+  # turns its Sparkle updater off, so `brew upgrade` stays the only updater
+  # (and `brew outdated` keeps reporting new versions).
 
   app "agenterm.app"
   binary "#{appdir}/agenterm.app/Contents/Helpers/agenterm"
