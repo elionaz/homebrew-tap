@@ -1,6 +1,6 @@
 cask "agenterm" do
-  version "0.5.0"
-  sha256 "385c613508d07a62f6b62fa617f19d5c47cef15c46a5943abb34b4b59caea063"
+  version "0.6.0"
+  sha256 "50168871d818e233abc07304fa7ccd9ae244fb65387ee9ab3326439749332989"
 
   url "https://github.com/elionaz/agenterm/releases/download/v#{version}/agenterm-#{version}-macos-universal.zip"
   name "agenterm"
