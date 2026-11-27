@@ -1,6 +1,6 @@
 cask "panal" do
-  version "0.16.0"
-  sha256 "f0602b11f553f905611c9633b89b1ac8deb78cc12b2434be1ca729b88246e078"
+  version "0.16.1"
+  sha256 "4542607b4b1cbe81855e4d15549d4de0afc4019f78d6ede84d18887df5571dff"
 
   url "https://github.com/elionaz/panal/releases/download/v#{version}/panal-#{version}-macos-universal.zip"
   name "panal"
